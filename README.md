@@ -1,4 +1,4 @@
-
+# Online Course App
 **General Notes**
 
 An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
@@ -13,3 +13,23 @@ An `onlinecourse` app has already been provided in this repo upon which you will
 For your reference, we have prepared the ER diagram design for the new assesement feature.
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+
+
+
+## virtual environment 
+pip install --upgrade distro-info
+pip3 install --upgrade pip==23.2.1
+pip install virtualenv
+virtualenv djangoenv
+source djangoenv/bin/activate
+
+## Set up the Python runtime and test the template project
+
+pip install -U -r requirements.txt
+
+## Create the initial migrations and generate the database schema
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+python3 manage.py runserver
